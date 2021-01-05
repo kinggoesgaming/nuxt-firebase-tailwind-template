@@ -26,6 +26,7 @@ module.exports = {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/firebase',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -38,4 +39,19 @@ module.exports = {
     extractCSS: true,
     publicPath: '/',
   },
+
+  firebase: {
+    config: {
+      apiKey: '<apiKey>',
+      authDomain: '<authDomain>',
+      databaseURL: '<databaseURL>',
+      projectId: '<projectId>',
+      storageBucket: '<storageBucket>',
+      messagingSenderId: '<messagingSenderId>',
+      appId: '<appId>',
+      measurementId: '<measurementId>'
+    },
+    services: {
+    }
+  }
 }
